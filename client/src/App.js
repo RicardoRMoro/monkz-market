@@ -4,7 +4,7 @@ import Navbar from './components/Navbar'
 import Inventory from './components/Inventory'
 import Listagem from './components/Listagem'
 import Profile from './components/Profile'
-import './App.css'
+import './styles/App.css'
 import { Route, Routes } from "react-router-dom"
 
 function App() {

@@ -1,0 +1,47 @@
+
+  .slider {
+    width: 100%;
+    min-width: 1240px;
+    height: 440px;
+    margin: 0;
+    padding-top: 150px;
+  }
+
+  
+  .slider img {
+    width: 960px;
+    height: 400px;
+    position: relative;
+    left: 49.5%;
+  }
+
+
+  /* css ref texto */
+  .slide-content {
+    position: relative;
+  }
+  
+  .slide-text {
+    position: absolute;
+    bottom: 50px; /* Ajuste a distância do texto em relação ao fundo */
+    left: 20%;
+    text-align: center;
+    color: white; /* Cor do texto */
+    padding: 00px;
+    max-width: 30%; /* Largura máxima para o texto */
+    font-family: "Microsoft Yahei", -apple-system, Segoe UI, Roboto, Ubuntu, Helvetica Neue, Helvetica, Arial, sans-serif;
+    text-align: left;
+  }
+  
+  .slide-text h2 {
+    font-size: 64px;
+    margin-bottom: 00px;
+    font-weight: bold;
+  }
+  
+  .slide-text p {
+    font-size: 50px;
+    line-height: 1.5;
+    /* font-weight: bold; */
+    margin-top: 0;
+  }

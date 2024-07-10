@@ -2,16 +2,38 @@ import React from 'react'
 import Slider from 'react-slick'
 import 'slick-carousel/slick/slick.css'
 import 'slick-carousel/slick/slick-theme.css'
-import '../App.css' 
+import '../styles/App.css' 
+import '../styles/slider.css' 
 import slide1 from '../imgs/slide1.png'
 import slide2 from '../imgs/slide2.png'
 import slide3 from '../imgs/slide3.png'
 
 function Home() {
+  const slides = [
+    {
+      image: slide1,
+      title: 'Slide 1',
+      text: 'Texto personalizado para o Slide 1',
+    },
+    {
+      image: slide2,
+      title: 'Slide 2',
+      text: 'Texto personalizado para o Slide 2',
+    },
+    {
+      image: slide3,
+      title: 'Slide 3',
+      text: 'Texto personalizado para o Slide 3',
+    },
+  ]
+
   const settings = {
+    fade: true,
+    swipe: true,
+    touchMove: true,
     dots: true,
     infinite: true,
-    speed: 500,
+    speed: 800,
     slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: true,
@@ -20,17 +42,21 @@ function Home() {
 
   return (
     <div>
-      <Slider {...settings} className="slider">
-        <div>
-          <img src={slide1} alt="Slide 1" />
+        <div className='section section0'>
+          <Slider {...settings} className="slider">
+            {slides.map((slide, index) => (
+              <div key={index}>
+                <div className="slide-content">
+                  <div className="slide-text">
+                    <h2>{slide.title}</h2>
+                    <p>{slide.text}</p>
+                  </div>
+                  <img src={slide.image} alt={`Slide ${index + 1}`} />
+                </div>
+              </div>
+            ))}
+          </Slider>
         </div>
-        <div>
-          <img src={slide2} alt="Slide 2" />
-        </div>
-        <div>
-          <img src={slide3} alt="Slide 3" />
-        </div>
-      </Slider>
       <div className="section section1">
         {/* Conteúdo da primeira seção */}
       </div>
