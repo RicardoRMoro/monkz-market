@@ -7,6 +7,7 @@ return <nav className="nav">
         <CustomLink to="/listagem">Anúncios</CustomLink>
         <CustomLink to="/inventory">Inventário</CustomLink>
         <CustomLink to="/profile">Perfil</CustomLink>
+        <li><a className="SteamLogin" href="http://localhost:5000/api/v1/auth/steam">Login</a></li>
     </ul>
 </nav>
 }

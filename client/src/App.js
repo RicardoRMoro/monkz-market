@@ -5,21 +5,10 @@ import Inventory from './components/Inventory'
 import Listagem from './components/Listagem'
 import Profile from './components/Profile'
 import './styles/App.css'
-import { Route, Routes } from "react-router-dom"
+import { Route, Routes, Navigate } from "react-router-dom"
 
 function App() {
 
-
-  // pegando dados api backend json
-  const [backendData, setBackendData] = useState([{}])
-  useEffect(() => {
-    fetch("/api").then(
-      response => response.json()
-    ).then(
-      data => {setBackendData(data)}
-    )
-  }, [])
-  /////////////
 
   return (
     <>
@@ -38,12 +27,3 @@ function App() {
 
 export default App
 
-
-      {/* {(typeof backendData.users === 'undefined') ? (
-        <p>Loading...</p>
-      ): (
-        backendData.users.map((user, i) =>(
-          <p key={i}>{user}</p>
-        ))
-      )} */}
-       //isso aqui pode ser útil futuramente

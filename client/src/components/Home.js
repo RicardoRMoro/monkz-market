@@ -12,18 +12,18 @@ function Home() {
   const slides = [
     {
       image: slide1,
-      title: 'Slide 1',
-      text: 'Texto personalizado para o Slide 1',
+      title: 'Pica 1',
+      text: 'Você merece muita pica 1',
     },
     {
       image: slide2,
-      title: 'Slide 2',
-      text: 'Texto personalizado para o Slide 2',
+      title: 'Pica 2',
+      text: 'Você merece muita pica 2',
     },
     {
       image: slide3,
-      title: 'Slide 3',
-      text: 'Texto personalizado para o Slide 3',
+      title: 'Pica 3',
+      text: 'Você merece muita pica 3',
     },
   ]
 
