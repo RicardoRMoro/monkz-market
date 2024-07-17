@@ -1,7 +1,7 @@
 
   .slider {
     width: 100%;
-    min-width: 1240px;
+    min-width: 960px;
     height: 440px;
     margin: 0;
     padding-top: 150px;
@@ -19,16 +19,17 @@
   /* css ref texto */
   .slide-content {
     position: relative;
+    overflow: hidden;
   }
   
   .slide-text {
     position: absolute;
-    bottom: 50px; /* Ajuste a distância do texto em relação ao fundo */
+    bottom: 50px; 
     left: 20%;
     text-align: center;
-    color: white; /* Cor do texto */
-    padding: 00px;
-    max-width: 30%; /* Largura máxima para o texto */
+    color: white; 
+    padding: 0;
+    max-width: 30%; 
     font-family: "Microsoft Yahei", -apple-system, Segoe UI, Roboto, Ubuntu, Helvetica Neue, Helvetica, Arial, sans-serif;
     text-align: left;
   }
@@ -42,6 +43,5 @@
   .slide-text p {
     font-size: 50px;
     line-height: 1.5;
-    /* font-weight: bold; */
     margin-top: 0;
   }

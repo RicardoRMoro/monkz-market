@@ -1,4 +1,5 @@
-import React from 'react'
+import React, { useState, useEffect} from 'react'
+import axios from 'axios'
 import Slider from 'react-slick'
 import 'slick-carousel/slick/slick.css'
 import 'slick-carousel/slick/slick-theme.css'
@@ -40,6 +41,7 @@ function Home() {
     autoplaySpeed: 2000,
   }
 
+
   return (
     <div>
         <div className='section section0'>
@@ -58,10 +60,8 @@ function Home() {
           </Slider>
         </div>
       <div className="section section1">
-        {/* Conteúdo da primeira seção */}
       </div>
       <div className="section section2">
-        {/* Conteúdo da segunda seção */}
       </div>
     </div>
   )
