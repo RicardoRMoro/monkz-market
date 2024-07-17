@@ -22,9 +22,10 @@ return <nav className="nav">
         <CustomLink to="/inventory">Inventário</CustomLink>
         <CustomLink to="/profile">Perfil</CustomLink>
         {user ? (
-                    <div className="bola-user">
+                    <li className="user">
                         <img src={user.avatar} alt="User Avatar" className="user-avatar" />
-                    </div>
+                        <span className="user-name">{user.personaname}</span>
+                    </li>
                 ) : (
                     <li><a className="SteamLogin" href="http://localhost:5000/api/v1/auth/steam">Login</a></li>
                 )}

@@ -49,9 +49,32 @@ body {
     border-bottom: 3px solid #88daf5;
 }
 
-.nav li:hover {
-    color: #88daf5;
+.nav li:not(.user):hover {
+  color: #88daf5;
 }
+
+
+.user-avatar {
+  width: 40px;
+  height: 40px; 
+  border-radius: 50%; 
+  overflow: hidden;
+  border: 2px solid white;
+}
+
+
+.nav .user {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+
+.nav .user .user-name {
+  font-size: 16px;
+  color: #dee1e6; 
+}
+
 
 
   .section {
