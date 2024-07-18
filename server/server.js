@@ -97,4 +97,15 @@ app.get('/api/me', (req, res) => {
     res.status(200).send(user)
 })
 
+
+app.post('/api/logout', (req, res) => {
+    req.session.destroy(err => {
+        if (err) {
+            return res.status(500).send('Logout failed.')
+        }
+        res.clearCookie('connect.sid', { path: '/' })
+        res.status(200).send('Logout successful.')
+    })
+})
+
 app.listen(5000, () =>{ console.log("server rodando") })

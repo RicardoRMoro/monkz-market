@@ -1,82 +1,10 @@
-/* App.css */
-* {
+  * {
     box-sizing: border-box;
-}
-
-body {
     margin: 0;
-    font-family: "Microsoft Yahei", -apple-system, Segoe UI, Roboto, Ubuntu, Helvetica Neue, Helvetica, Arial, sans-serif;
-  }
-
-  .nav {
-    color: #dee1e6;
-    background: url('../imgs/navbar-bg.png') no-repeat center top;
-    height: 70px;
-    align-items: stretch;
-    gap: 2rem;
-    padding: 0 1rem;
-    justify-content: space-between;
-    display: flex;
-    position: relative;
-}
-
-.site-title {
-    font-size: 2rem;
-    margin-left: 270px;
-    font-family: "Microsoft Yahei", -apple-system, Segoe UI, Roboto, Ubuntu, Helvetica Neue, Helvetica, Arial, sans-serif;
-    font-weight: bold;
-}
-
-.nav ul {
     padding: 0;
-    margin-right: 100px;
-    list-style: none;
-    display: flex;
-    gap: 100px;
-    font-family: "Microsoft Yahei", Helvetica Neue, Helvetica, Arial, sans-serif;
-}
-
-.nav a {
-    color: inherit;
-    text-decoration: none;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    padding: .25rem;
-}
-
-.nav li.active {
-    border-bottom: 3px solid #88daf5;
-}
-
-.nav li:not(.user):hover {
-  color: #88daf5;
-}
-
-
-.user-avatar {
-  width: 40px;
-  height: 40px; 
-  border-radius: 50%; 
-  overflow: hidden;
-  border: 2px solid white;
-}
-
-
-.nav .user {
-  display: flex;
-  align-items: center;
-  gap: 16px;
-}
-
-
-.nav .user .user-name {
-  font-size: 16px;
-  color: #dee1e6; 
-}
-
-
-
+    font-family: "Microsoft Yahei"
+  }
+ 
   .section {
     width: 100%;
     min-width: 1240px;
