@@ -44,8 +44,8 @@ function Home() {
 
   return (
     <div>
-        <div className='section section0'>
-          <Slider {...settings} className="slider">
+        <div className='homebg'>
+          {/* <Slider {...settings} className="slider">
             {slides.map((slide, index) => (
               <div key={index}>
                 <div className="slide-content">
@@ -57,12 +57,8 @@ function Home() {
                 </div>
               </div>
             ))}
-          </Slider>
+          </Slider> */}
         </div>
-      <div className="section section1">
-      </div>
-      <div className="section section2">
-      </div>
     </div>
   )
 }

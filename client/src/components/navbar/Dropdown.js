@@ -1,8 +1,8 @@
 import {Link} from "react-router-dom"
-import { useState, useEffect } from "react"
-import { MenuItems } from './MenuItems'
+import { useState} from "react"
+import { signOut } from '../auth'
 
-export default function Dropdown() {
+export default function Dropdown({ setUser }) {
 
     const [click, setClick] = useState(false)
     const handleClick = () => setClick(!click)
@@ -11,15 +11,21 @@ export default function Dropdown() {
         <>
             <ul onClick={handleClick}
             className={click ? "dropdown-menu clicked" : "dropdown-menu"}>
-                {MenuItems.map((item, index) => {
-                    return (
-                        <li key={index}>
-                            <Link className={item.cName} to={item.path} onClick={() => setClick(false)}>
-                            {item.title}
-                            </Link>
-                        </li>
-                    )
-                })}
+                <li>
+                    <Link className="dropdown-link" to="/profile" onClick={() => setClick(false)}>
+                     Perfil
+                    </Link>
+                </li>
+                <li>
+                    <Link className="dropdown-link" to="/inventory" onClick={() => setClick(false)}>
+                     Inventário
+                    </Link>
+                </li>
+                <li>
+                    <div className="dropdown-link" onClick={() => signOut(setUser)}>
+                     Sair
+                    </div>
+                </li>
             </ul>
         </>
     )

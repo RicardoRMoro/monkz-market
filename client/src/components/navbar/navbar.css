@@ -63,6 +63,15 @@
   transition: all 0.2s ease-out;
 }
 
+.user-avatar{
+  border-radius: 50%;
+  border: 2px solid white;
+}
+
+.user-name{
+  padding-left: 10px;
+}
+
 .fa-bars {
   color: #fff;
 }
@@ -192,12 +201,13 @@
   color: white;
 }
 
+
 .LogoutButton {
   padding: 8px 20px;
   border-radius: 4px;
   outline: none;
   border: none;
-  font-size: 18px;
+  font-size: small;
   font-weight: 400;
   font-family: "Microsoft Yahei", sans-serif;
   background-color: rgb(231, 112, 112);
@@ -217,7 +227,7 @@
   position: absolute;
   top: 70px;
   list-style: none;
-  text-align: end;
+  text-align: start;
 }
 
 .dropdown-menu li{

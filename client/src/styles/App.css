@@ -5,29 +5,38 @@
     font-family: "Microsoft Yahei"
   }
  
-  .section {
+  .homebg {
     width: 100%;
     min-width: 1240px;
-    height: 670px;
+    height: 1024px;
     margin: 0;
     background-size: cover;
     background-repeat: no-repeat;
-  }
-
-  .section0 {
-    background-image: url('../imgs/index-section0-bg.jpg');
-    background-color: rgb(37, 40, 45);
+    background-image: url('../imgs/bg1.jpg');
     margin-top: -70px;
     padding-top: 70px;
   }
-  
-  .section1 {
-    background-color: rgba(229, 229, 229, 0.8); /* Cor meio transparente */
-    background-image: url('../imgs/index-section1-bg.jpg'); /* faixa1 */
+
+  .listagembg {
+    width: 100%;
+    min-width: 1240px;
+    height: 1024px;
+    margin: 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url('../imgs/bg2.jpeg');
+    margin-top: -70px;
+    padding-top: 70px;
   }
-  
-  .section2 {
-    background-color: rgba(37, 40, 45, 0.8); /* Cor meio transparente */
-    background-image: url('../imgs/index-section2-bg.jpg'); /* faixa2 */
+
+  .profilebg {
+    width: 100%;
+    min-width: 1240px;
+    height: 1024px;
+    margin: 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url('../imgs/bg3.jpg');
+    margin-top: -70px;
+    padding-top: 70px;
   }
-  
